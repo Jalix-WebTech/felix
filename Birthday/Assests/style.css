@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html,  body{
+  height: 100%;
+  margin: 0;
+}
+body{
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.bg-video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.video-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+main{
+  padding: 2rem;
+  text-align: center;
+}
+
+#header{
+  padding-top: 20px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Celebrant{
+  width: 300px;
+  border-radius: 10px;
+  border: 5px solid #EFB0C9;
+}
+
+.bday-title{
+  margin: 10px 0 20px 0;
+}
+
+.bday-age{
+  color: white;
+  background-color: #EFB0C9;
+  margin: 40px 0 20px 0;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+.bday-date{
+  color: white;
+  background-color: #EFB0C9;
+  /* margin: 20px 0 20px 0; */
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+#gift-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.gift-img{
+  width: 400px;
+  padding: 0;
+  height: 500px;
+  background-image: url(./IMG/gift.png);
+  background-position: center;
+  background-color: #413b3b44;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  border: #413b3b solid 2px;
+  border-radius: 6px;
+}
+
+.gift-img:hover{
+  background-image: url(./IMG/go-blue.gif);
+  background-position: center;
+  background-size: cover;
+}
+
+
+#gift-title{
+  text-align: center;
+  width: 100%;
+}
+
+.countdown-container{
+  text-align: center;
+  background: rgba(255, 255, 255, 0.089);
+  padding: 25px 2px 25px 2px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+}
+
+.countdown-container h1{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#countdown{
+  font-size: 1.4rem;
+}
+
+#mobile-text{
+  display: block;
+  margin-bottom: 10px;
+}
+
+#desktop-text{
+  display: none;
+}
+
+/* Desktop Screens */
+
+@media (min-width: 768px){
+  #mobile-text{
+  display: none;
+  
+}
+
+#desktop-text{
+  display: block;
+  margin-bottom: 10px;
+}
+
+}
